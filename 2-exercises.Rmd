@@ -1,0 +1,36 @@
+---
+title: "Exercises Chapter 2 ESLR"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Solutions also see: http://blog.princehonest.com/stat-learning/
+
+## Conceptual
+
+1. _Flexible (e.g. SVM) vs inflexible method (regression) better?_
+(a) The sample size n is extremely large, and the number of predictors p is small: FLEXIBLE
+(b) The number of predictors p is extremely large, and the number of observations n is small: INFLEXIBLE (with flexible overfitting)
+(c) The relationship between the predictors and response is highly non-linear: FLEXIBLE
+(d) The variance of the error terms, i.e. σ2 = Var(ε), is extremely high: INFLEXIBLE
+
+2. _Classification or regression problem? Inference or prediction? Provide n and p._ 
+(a) Regression. Inference. n = 500, p = 3. 
+(b) Classification. Prediction. n = 20, p = 13. 
+(c) Regression. Prediction. n = 52, p = 3.
+
+
+5. _What are the advantages and disadvantages of a very flexible (versus a less flexible) approach for regression or classification?_
+advantages for very flexible method: decreading bias, better fit for non-linear models. 
+disadvantages for very flexible method: estimating more parameters, less interpretable, overfitting, increasing variance. 
+
+_Under what circumstances might a more flexible approach be preferred to a less flexible approach?_ when interested in prediction
+_When might a less flexible approach be preferred?_ for inference and interpretability in results.
+
+6. _parametrix vs non parametric:_ 
+parametric interpretable, but not flexible. non parametric very flexible, but risk of overfitting. 
+
+## Applied
